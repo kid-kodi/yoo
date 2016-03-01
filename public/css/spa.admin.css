@@ -1,0 +1,14 @@
+/*
+ * spa.admin.css
+ * Users feature styles
+*/
+
+.spa-admin {
+  position   : absolute;
+  top        : 0;
+  left       : 0;
+  right: 250px;
+  bottom     : 0;
+  overflow-y : auto;
+  display    : none;
+}

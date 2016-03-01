@@ -1,0 +1,66 @@
+<!doctype html>
+<!--
+  spa.html
+  spa browser document
+-->
+
+<html>
+<head>
+  <!-- ie9+ rendering support for latest standards -->
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <title>YOO!</title>
+
+  <!-- third-party stylesheets -->
+  <link rel="stylesheet" href="css/third-party/ionicons.min.css" type="text/css"/>
+
+
+  <!-- our stylesheets -->
+  <link rel="stylesheet" href="css/spa.css"       type="text/css"/>
+  <link rel="stylesheet" href="css/spa.shell.css" type="text/css"/>
+  <link rel="stylesheet" href="css/spa.nav.css"   type="text/css"/>
+  <link rel="stylesheet" href="css/spa.avtr.css"  type="text/css"/>
+  <link rel="stylesheet" href="css/spa.chat.css"  type="text/css"/>
+  <link rel="stylesheet" href="css/spa.home.css"  type="text/css"/>
+  <link rel="stylesheet" href="css/spa.rec.css"   type="text/css"/>
+  <link rel="stylesheet" href="css/spa.proc.css"  type="text/css"/>
+  <link rel="stylesheet" href="css/spa.stock.css" type="text/css"/>
+  <link rel="stylesheet" href="css/spa.rappo.css" type="text/css"/>
+  <link rel="stylesheet" href="css/spa.admin.css" type="text/css"/>
+
+  <!-- third-party javascript -->
+  <script src="socket.io/socket.io.js"            ></script>
+  <script src="js/jq/taffydb-2.6.2.js"            ></script>
+  <script src="js/jq/jquery-1.9.1.js"             ></script>
+  <script src="js/jq/jquery.cookie.js"            ></script>
+  <script src="js/jq/moment-with-langs.js"        ></script>
+  <script src="js/jq/jquery.uriAnchor-1.1.3.js"   ></script>
+  <script src="js/jq/jquery.event.gevent-0.1.9.js"></script>
+  <script src="js/jq/jquery.event.ue-0.3.2.js"    ></script>
+
+  <!-- our javascript -->
+  <script src="js/spa.js"       ></script>
+  <script src="js/spa.util.js"  ></script>
+  <script src="js/spa.data.js"  ></script>
+  <script src="js/spa.fake.js"  ></script>
+  <script src="js/spa.model.js" ></script>
+  <script src="js/spa.util_b.js"></script>
+  <script src="js/spa.shell.js" ></script>
+  <script src="js/spa.nav.js"   ></script>
+  <script src="js/spa.chat.js"  ></script>
+  <script src="js/spa.avtr.js"  ></script>
+  <script src="js/spa.home.js"  ></script>
+  <script src="js/spa.rec.js"   ></script>
+  <script src="js/spa.proc.js"  ></script>
+  <script src="js/spa.stock.js" ></script>
+  <script src="js/spa.rappo.js" ></script>
+  <script src="js/spa.admin.js" ></script>
+  <script>
+    $(function () { spa.initModule( $('#spa') ); });
+  </script>
+
+</head>
+<body>
+<div id="spa"></div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+/*
+ * spa.proc.css
+ * processus feature styles
+*/
+
+.spa-proc {
+  position   : absolute;
+  top        : 0;
+  left       : 0;
+  right: 250px;
+  bottom     : 0;
+  overflow-y : auto;
+  display    : none;
+}

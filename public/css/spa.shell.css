@@ -1,0 +1,220 @@
+/*
+ * spa.shell.css
+ * Shell styles
+*/
+
+.spa-shell-head, .spa-shell-head-logo, .spa-shell-head-acct,
+.spa-shell-head-search, .spa-shell-head-notif, .spa-shell-main, 
+.spa-shell-main-nav, .spa-shell-main-content,
+.spa-shell-modal, .spa-shell-flash {
+  position : absolute;
+}
+.spa-shell-head {
+  top    : 0;
+  left   : 0;
+  right  : 0;
+  height : 40px;
+  /* background: #7B1FA2; */
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAqCAMAAABFoMFOAAAAWlBMV…8/UxBxQDQuFwlpqgBZBq6+P+unVY1GnDgwqbD2zGz5e1lBdwvGGPE6OgAAAABJRU5ErkJggg==);
+  background-repeat: repeat-x;
+  background-size: auto;
+  background-position: 0 0;
+  background-color: #7B1FA2;
+  border-bottom: 1px solid #103480;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .82);
+  /* color: #fff; */
+}
+.spa-shell-head-logo {
+  top    : 4px;
+  left   : 8px;
+  height : 32px;
+  line-height: 32px;
+  width  : 128px;
+}
+
+
+  .spa-shell-head-logo h1 {
+    /* display: inline-block; */
+    font   : 800 22px/22px Arial, Helvetica, sans-serif;
+    margin : 0;
+    line-height: inherit;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 0px #000;
+  }
+  .spa-shell-head-logo p {
+    font   : 800 10px/10px Arial, Helvetica, sans-serif;
+    margin : 0;
+  }
+
+.spa-shell-head-search {
+  top: 8px;
+  left       : 130px;
+  width      : 400px;
+  height: 25px;
+  line-height: 25px;
+  /* background : blue; */
+}
+
+.spa-shell-head-search-form{
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.spa-shell-head-search input[type=text]{
+  width      : 350px;
+  height: 25px;
+  border: 1px solid #ddd;
+  border-right: none;
+  border-radius: 3px 0 0 3px;
+  box-shadow: 0 0 1px #888;
+  outline: none;
+}
+.spa-shell-head-search-send{
+  width: 50px;
+  height: 25px;
+  text-align: center;
+  background: #f6f7f8;
+  border: 1px solid #ccc;
+  border-radius: 0 3px 3px 0;
+  font-size: 20px;
+  text-shadow: 1px 1px 1px #888;
+  /* font-weight: bold; */
+  box-shadow: 0 0 1px #ddd;
+}
+
+.spa-shell-head-notif{
+  display     : flex;
+  top         : 4px;
+  right: 250px;
+  height      : 32px;
+  line-height : 32px;
+  flex-direction: row;
+}
+.spa-shell-head-notif div{
+  margin: 0;
+  outline: none;
+  padding: 4px 5px 0;
+  position: relative;
+  text-decoration: none;
+  font-size: 22px;
+  text-shadow: 1px 1px 0px #888;
+  color: #fff;
+  cursor : pointer;
+}
+
+.spa-shell-head-notif div:hover{
+  text-shadow: 1px 1px 0px #888;
+  color: #000;
+}
+
+.spa-shell-head-acct {
+  top           : 4px;
+  right         : 0;
+  width: 235px;
+  height        : 32px;
+  line-height   : 32px;
+  color         : #fff;
+  text-align: center;
+  cursor        : pointer;
+  overflow      : hidden;
+  text-overflow : ellipsis;
+  display       : flex;
+  flex-direction: row;
+  align-items   : center;
+  padding-left: 8px;
+}
+
+.spa-shell-head-acct:hover {
+  background: #9C27B0;
+}
+
+.spa-shell-head-acct img{
+  width: 25px;
+  height: 25px;
+}
+.spa-shell-head-acct div{
+  padding-left: 8px;
+  width: 165px;
+  text-align: left;
+}
+
+.spa-shell-main {
+  top    : 40px;
+  left   : 0;
+  right  : 200px;
+  bottom : 0;
+  right  : 0;
+  /* background: #eee; */
+}
+.spa-shell-main-content,
+.spa-shell-main-nav {
+  top    : 0;
+  bottom : 0;
+}
+.spa-shell-main-nav {
+  width: 200px;
+  /* background : #eee; */
+  z-index    : 1;
+}
+  .spa-x-closed .spa-shell-main-nav {
+    width  : 0;
+  }
+
+.spa-shell-main-content {
+  left: 200px;
+  right : 0;
+  /* background : #ddd; */
+}
+  .spa-x-closed .spa-shell-main-content {
+    left : 0;
+  }
+.spa-shell-foot {
+  position: fixed;
+  display : flex;
+  flex-direction  : row;
+  justify-content : flex-end;
+  align-items: flex-end;
+  bottom  : 0;
+  left    : 0;
+  right   : 200px;
+  height  : 0;
+  z-index: 1;
+}
+
+.spa-shell-main-people {
+  position      : absolute;
+  top           : 0;
+  bottom        : 0;
+  right         : 0;
+  width: 250px;
+  /* background    : #fff; */
+  border-style  : solid;
+  border-width  : 0 0 0 thin;
+  border-color: #ccc;
+  z-index       : 1;
+}
+
+.spa-shell-modal {
+  margin-top    : -200px;
+  margin-left   : -200px;
+  top           : 50%;
+  left          : 50%;
+  width         : 400px;
+  height        : 400px;
+  background    : #fff;
+  border-radius : 3px;
+  z-index       : 2;
+  display       : none;
+}
+
+.spa-shell-flash {
+  top         : 45px;
+  left        : 0;
+  right       : 0;
+  height      : 40px;
+  line-height : 40px;
+  z-index     : 2;
+  display     : none;
+}

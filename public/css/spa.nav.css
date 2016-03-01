@@ -1,0 +1,34 @@
+/*
+ * spa.nav.css
+ * Avatar feature styles
+*/
+
+.spa-nav-box {
+  /* position      : absolute; */
+  /* width         : 62px; */
+  display: flex;
+  padding       : 0 4px;
+  height        : 40px;
+  line-height: 40px;
+  border-left   : 4px solid transparent;
+  cursor        : pointer;
+  text-align    : left;
+  overflow      : hidden;
+  text-overflow : ellipsis;
+  font-size     : 17px;
+  /*border-radius : 4px;*/
+  /* text-align    : center; */
+}
+  .spa-nav-box.spa-x-active {
+    border-left   : 4px solid #44f;
+  }
+
+  .spa-nav-box .icon {
+    font-size     : 27px;
+    width: 50px;
+    text-align: center;
+  }
+
+  .spa-nav-box .text {
+    
+  }

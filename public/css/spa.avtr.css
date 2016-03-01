@@ -1,0 +1,74 @@
+/*
+ * spa.avtr.css
+ * Avatar feature styles
+*/
+
+
+.spa-avtr-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  margin: 5px;
+}
+  
+.spa-avtr-box:hover{
+  background: #eee;
+}
+
+  .spa-avtr-box img{
+    order: 1;
+    width: 32px;
+    height: 32px;
+    float: left;
+    border-radius: 10px;
+    box-shadow: 0 0 2px #ccc;
+  }
+  .spa-avtr-box .fname{
+    /* background : antiquewhite; */
+    width: 130px;
+    /* display: block; */
+    overflow      : hidden;
+    text-overflow : ellipsis;
+    padding-left: 8px;
+    order: 2;
+    white-space: nowrap;
+    -webkit-order:1;
+    -webkit-flex: 0 1 auto;/*important*/
+    text-overflow: ellipsis;
+    overflow:hidden;
+    min-width:0;
+  }
+  .spa-avtr-box .time{
+    order: 3;
+    font-size: 9px;
+    width: 65px !important;
+    display: inline-block;
+    /* vertical-align: top; */
+    /* float: right; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -webkit-order:1;
+    -webkit-flex: 0 1 auto;/*important*/
+    text-overflow: ellipsis;
+    overflow:hidden;
+    min-width:0;
+  }
+
+  .spa-avtr-box.spa-x-is-user {
+    border-color : #44f;
+  }
+
+  .spa-avtr-box.spa-x-is-chatee {
+    border-color : #080;
+  }
+  .spa-avtr-box.spa-x-is-drag {
+    cursor           : move;
+    color            : #fff;
+    background-color : #000;
+    border-color     : #800;
+  }
